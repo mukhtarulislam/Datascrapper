@@ -36,7 +36,8 @@ pip install -r requirements.txt
 
 
 
-#Usage
+##Usage
+
 Extract URLs to CSV
 To extract URLs from a specified website and save them to a CSV file, use the extract_urls_to_csv function:
 
@@ -47,7 +48,7 @@ folder_name = "output"  # Output folder for CSV
 extract_urls_to_csv(website_url, folder_name)
 
 
-#Extract Content from URLs
+##Extract Content from URLs
 To read URLs from a CSV file and extract content into separate DOCX files, use the extract_content_from_urls function:
 
 
@@ -57,7 +58,7 @@ urls = ["https://example.com/page1", "https://example.com/page2"]  # List of URL
 folder_name = "output"  # Output folder for DOCX files
 extract_content_from_urls(urls, folder_name)
 
-#Convert DOCX to PDF
+##Convert DOCX to PDF
 To convert multiple DOCX files to PDF, use the convert_multiple_docx_to_pdf function:
 
 from data_scraper.docx_to_pdf_converter import convert_multiple_docx_to_pdf
@@ -66,11 +67,11 @@ docx_folder = "output"  # Folder containing DOCX files
 output_folder = "pdf_output"  # Output folder for PDF files
 convert_multiple_docx_to_pdf(docx_folder, output_folder)
 
-#License
+##License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-#Contributing
+##Contributing
 Contributions are welcome! Please follow these steps:
 
 1.Fork the repository.
