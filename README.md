@@ -61,10 +61,14 @@ To read URLs from a CSV file and extract content into separate DOCX files, use t
 # Convert DOCX to PDF
 To convert multiple DOCX files to PDF, use the convert_multiple_docx_to_pdf function:
 ```bash
- from data_scraper.docx_to_pdf_converter import convert_multiple_docx_to_pdf
- docx_folder = "output"  # Folder containing DOCX files
- output_folder = "pdf_output"  # Output folder for PDF files
- convert_multiple_docx_to_pdf(docx_folder, output_folder)
+ from data_scraper.docx_to_pdf_converter import DocxToPdfConverter
+  converter = DocxToPdfConverter()
+  # Define input and output directories
+  input_directory = "folder_word_file"
+  output_directory = "folder_pdf_file"
+
+  # Convert all .docx files to .pdf
+  converter.convert_multiple_docx_to_pdf(input_directory, output_directory)
 ```
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
