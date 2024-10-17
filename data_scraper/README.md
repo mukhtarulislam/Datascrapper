@@ -19,21 +19,29 @@ A Python package to extract URLs from websites, extract content into DOCX files,
   - `python-docx`
   - `reportlab`
 
-## Installation
+## Installation or To install the package, use:
+
+
+  ```bash
+pip install DataScraper==0.1.0
+  ```
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mukhtarulislam/data_scraper.git
    cd data_scraper
+   ```
 
+2. Create a virtual environment (recommended):
 
-2.Create a virtual environment (recommended):
-python -m venv venv
-source venv/bin/activate  
+ ``` bash
+  python -m venv venv 
 
-On Windows use 
-`venv\Scripts\activate`
-
+  source venv/bin/activate  
+ 
+  On Windows use 
+` venv\Scripts\activate`
+ ```
 3.Install the required packages:
 pip install -r requirements.txt
 
@@ -104,3 +112,6 @@ Contributions are welcome! Please follow these steps:
 
 # Contact
 For questions or suggestions, please reach out to me Mukhtarulislam88@hotmail.com.
+
+
+
