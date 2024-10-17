@@ -8,4 +8,4 @@ To install the package, use:
 
 
 ```bash
-pip install .
+pip install DataScraper==0.1.0
