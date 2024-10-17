@@ -37,11 +37,23 @@ On Windows use
 3.Install the required packages:
 pip install -r requirements.txt
 
+# How to Run main.py
+### To extract URLs:
+``` bash
+  python main.py --action extract_urls --url "http://example.com" --csv_folder ./csv_output
+```
+### To extract content from URLs in a CSV:
+``` bash
+python main.py --action extract_content --csv_folder ./csv_output --docx_folder ./docx_output
 
+```
+### To convert DOCX files to PDF:
+``` bash
+  python main.py --action convert_to_pdf --docx_folder ./docx_output --pdf_folder ./pdf_output
+```
+# Usage
 
-## Usage
-
-# Extract URLs to CSV
+## Extract URLs to CSV
 To extract URLs from a specified website and save them to a CSV file, use the extract_urls_to_csv function:
   ```bash
   from data_scraper.url_extractor import extract_urls_to_csv
@@ -50,7 +62,7 @@ To extract URLs from a specified website and save them to a CSV file, use the ex
   extract_urls_to_csv(website_url, folder_name)
 ```
 
-# Extract Content from URLs
+## Extract Content from URLs
 To read URLs from a CSV file and extract content into separate DOCX files, use the extract_content_from_urls function:
  ```bash
   from data_scraper.content_extractor import extract_content_from_urls
@@ -58,7 +70,7 @@ To read URLs from a CSV file and extract content into separate DOCX files, use t
   folder_name = "output"  # Output folder for DOCX files
   extract_content_from_urls(urls, folder_name)
 ```
-# Convert DOCX to PDF
+## Convert DOCX to PDF
 To convert multiple DOCX files to PDF, use the convert_multiple_docx_to_pdf function:
 ```bash
  from data_scraper.docx_to_pdf_converter import DocxToPdfConverter
@@ -74,7 +86,7 @@ To convert multiple DOCX files to PDF, use the convert_multiple_docx_to_pdf func
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-## Contributing
+# Contributing
 Contributions are welcome! Please follow these steps:
 
 1.Fork the repository.
@@ -90,5 +102,5 @@ Contributions are welcome! Please follow these steps:
   
 5.Create a new Pull Request.
 
-Contact
+# Contact
 For questions or suggestions, please reach out to me Mukhtarulislam88@hotmail.com.
